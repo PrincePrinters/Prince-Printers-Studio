@@ -1,0 +1,13 @@
+{
+  "appId": "com.princeprinters.app",
+  "appName": "Prince Printers & Studio",
+  "webDir": "www",
+  "server": {
+    "url": "https://LIVE-WEBSITE-URL-YAHAN-DAALIYE",
+    "cleartext": false,
+    "errorPath": "index.html"
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

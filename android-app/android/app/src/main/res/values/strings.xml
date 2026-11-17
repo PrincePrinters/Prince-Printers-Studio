@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Prince Printers &amp; Studio</string>
+    <string name="title_activity_main">Prince Printers &amp; Studio</string>
+    <string name="package_name">com.princeprinters.app</string>
+    <string name="custom_url_scheme">com.princeprinters.app</string>
+</resources>

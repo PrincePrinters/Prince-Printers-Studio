@@ -1,0 +1,21 @@
+{
+  "name": "Prince Printers & Studio",
+  "short_name": "Prince Studio",
+  "description": "Professional Photography & Printing Services in Jamtara, Jharkhand",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090a10",
+  "theme_color": "#f59e0b",
+  "icons": [
+    {
+      "src": "/prince-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/prince-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

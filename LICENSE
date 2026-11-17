@@ -1,0 +1,30 @@
+Studio Website Template — License
+Copyright (c) 2026 Quick Art Photography Academy (https://quickartphotography.in/)
+All rights reserved.
+
+1. PERMISSION
+   The person or business who received this source code from Quick Art Photography
+   Academy ("Licensee") may use and modify it to run their own studio website.
+
+2. REQUIRED CREDIT (ATTRIBUTION)
+   Every public page that shows the website footer must keep the credit
+   "Created by Quick Art Photography Academy", visible and linked to
+   https://quickartphotography.in/, exactly as provided in
+   src/components/SiteCredit.tsx.
+   The Licensee must not remove, hide, alter, shrink or obscure this credit or its link,
+   and must not edit or remove src/components/SiteCredit.tsx or
+   scripts/verify-credit.mjs.
+
+3. NO RESALE OR REDISTRIBUTION
+   The Licensee may not sell, sublicense, share or redistribute this source code, in
+   whole or in part, to any third party without written permission from
+   Quick Art Photography Academy.
+
+4. TERMINATION
+   Breaking any of these terms ends the permission in section 1 immediately.
+
+5. NO WARRANTY
+   The software is provided "as is", without warranty of any kind. Quick Art Photography
+   Academy is not liable for any claim, damages or other liability arising from its use.
+
+Contact: https://quickartphotography.in/

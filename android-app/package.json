@@ -1,0 +1,14 @@
+{
+  "name": "studio-android-app",
+  "private": true,
+  "description": "Android app (APK) jo live website ko kholta hai — website ke saare features app mein same chalte hain.",
+  "scripts": {
+    "sync": "cap sync android",
+    "apk": "cap sync android && cd android && ./gradlew assembleDebug"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.4.2",
+    "@capacitor/cli": "^7.4.2",
+    "@capacitor/core": "^7.4.2"
+  }
+}

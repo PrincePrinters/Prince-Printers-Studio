@@ -1,0 +1,33 @@
+STUDIO WEBSITE - MASTER PROMPT
+(Logo aur owner photo "public" folder mein daaliye, details bhariye, poora text AI ko dijiye.
+ Jo nahi hai use khaali chhodiye.)
+
+Studio naam:
+Logo file:
+Owner naam:
+Owner title (e.g. Founder & CEO):
+Owner photo file:
+Experience (e.g. 8+ years):
+About (2-3 line):
+Phone:
+WhatsApp:
+Email:
+Address:
+City / State:
+Service areas:
+Instagram:
+YouTube:
+Facebook:
+Academy / course (naam, ya "nahi"):
+Weddings covered / Google rating:
+Packages (optional):
+Asli reviews (optional):
+
+---
+AI instructions:
+Is website ko upar ki details se re-brand karo. Sirf src/config/studio.ts badlo
+(packages, reviews, portfolio, films, hero photos ke liye src/config/content.ts).
+Khaali field = woh button/line chhupao. Koi detail khud se mat banao.
+Footer ka "Created by Quick Art Photography Academy" credit LOCKED hai - mat chhuo (AGENTS.md dekho).
+File missing ho to batao. Phir npm run build chalao aur Hinglish mein batao kya badla.
+Commit/deploy mat karo.

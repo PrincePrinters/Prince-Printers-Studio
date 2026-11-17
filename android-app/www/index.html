@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quick Art Studio</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+         background: #020617; color: #e2e8f0; font-family: system-ui, sans-serif; text-align: center; padding: 24px; box-sizing: border-box; }
+  h1 { font-size: 20px; color: #f59e0b; margin: 0 0 8px; }
+  p { font-size: 14px; color: #94a3b8; margin: 0 0 20px; }
+  button { background: #f59e0b; color: #020617; border: 0; border-radius: 12px; padding: 12px 24px; font-weight: 700; font-size: 14px; }
+</style>
+</head>
+<body>
+  <div>
+    <h1>Internet nahi mila</h1>
+    <p>Internet connection check karke dobara try kariye.</p>
+    <button onclick="history.back(); setTimeout(() => location.reload(), 300)">Dobara Try Karein</button>
+  </div>
+</body>
+</html>
