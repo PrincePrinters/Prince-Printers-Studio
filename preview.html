@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +12,35 @@
       color: #f3f4f6;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
+
     .gold-gradient-text {
       background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     .glass-card {
       background: rgba(17, 24, 39, 0.7);
       backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
+
     .glass-card:hover {
       border-color: rgba(245, 158, 11, 0.4);
     }
   </style>
 </head>
+
 <body class="min-h-screen antialiased flex flex-col">
 
   <!-- TOP NAVBAR -->
   <header class="sticky top-0 z-50 w-full bg-gray-950/90 backdrop-blur-xl border-b border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      
+
       <!-- Brand Logo -->
       <div class="flex items-center gap-3">
-        <div class="w-12 h-12 rounded-xl overflow-hidden border border-amber-500/40 shadow-lg shadow-amber-500/10 bg-black flex items-center justify-center p-1">
+        <div
+          class="w-12 h-12 rounded-xl overflow-hidden border border-amber-500/40 shadow-lg shadow-amber-500/10 bg-black flex items-center justify-center p-1">
           <img src="./logo.png" alt="Prince Printers & Studio Logo" class="w-full h-full object-contain">
         </div>
         <div class="flex flex-col">
@@ -49,13 +55,17 @@
 
       <!-- Quick Actions -->
       <div class="flex items-center gap-3">
-        <a href="#bookingFormSection" class="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-gray-950 text-xs font-bold uppercase tracking-wider transition">
+        <a href="#bookingFormSection"
+          class="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-gray-950 text-xs font-bold uppercase tracking-wider transition">
           📝 Form Bharein
         </a>
-        <a href="tel:+919835758765" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-900 border border-gray-700 text-gray-200 text-xs font-semibold hover:border-amber-400 transition">
+        <a href="tel:+919835758765"
+          class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-900 border border-gray-700 text-gray-200 text-xs font-semibold hover:border-amber-400 transition">
           <span>📞 +91 98357 58765</span>
         </a>
-        <a href="https://wa.me/919835758765?text=Hello%20Dinesh%20Sir,%20I%20want%20to%20know%20more%20about%20your%20services" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white text-xs font-bold uppercase tracking-wider shadow-lg shadow-emerald-500/20 transition">
+        <a href="https://wa.me/919835758765?text=Hello%20Dinesh%20Sir,%20I%20want%20to%20know%20more%20about%20your%20services"
+          target="_blank"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white text-xs font-bold uppercase tracking-wider shadow-lg shadow-emerald-500/20 transition">
           <span>WhatsApp Chat</span>
         </a>
       </div>
@@ -65,11 +75,14 @@
 
   <!-- HERO SECTION -->
   <section class="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden text-center">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(245,158,11,0.12)_0%,transparent_70%)] pointer-events-none"></div>
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(245,158,11,0.12)_0%,transparent_70%)] pointer-events-none">
+    </div>
 
     <div class="relative z-10 max-w-4xl mx-auto space-y-6">
-      
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-amber-500/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider">
+
+      <div
+        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-amber-500/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider">
         <span>✨ Prince Printers &amp; Studio &bull; Directed by Dinesh Mandal</span>
       </div>
 
@@ -79,7 +92,8 @@
       </h1>
 
       <p class="max-w-2xl mx-auto text-gray-300 text-sm sm:text-base leading-relaxed">
-        Wedding photography, candid portraits, flex &amp; color printing, lamination, photocopy, scanning, online form filling, aur digital services in <strong>Kashitar, Karmatar, Jamtara</strong>.
+        Wedding photography, candid portraits, flex &amp; color printing, lamination, photocopy, scanning, online form
+        filling, aur digital services in <strong>Kashitar, Karmatar, Jamtara</strong>.
       </p>
 
       <!-- Event Code Access Demo -->
@@ -90,8 +104,10 @@
             <span>Wedding Guest? Enter Event Code to Find Photos:</span>
           </div>
           <div class="flex gap-2">
-            <input type="text" id="eventCodeInput" placeholder="e.g. WEDDING2026" class="flex-1 px-3 py-2 bg-gray-950 border border-gray-700 rounded-xl text-xs text-white placeholder-gray-500 focus:outline-none focus:border-amber-400 font-mono">
-            <button onclick="handleCheckCode()" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-gray-950 text-xs font-bold uppercase rounded-xl transition">
+            <input type="text" id="eventCodeInput" placeholder="e.g. WEDDING2026"
+              class="flex-1 px-3 py-2 bg-gray-950 border border-gray-700 rounded-xl text-xs text-white placeholder-gray-500 focus:outline-none focus:border-amber-400 font-mono">
+            <button onclick="handleCheckCode()"
+              class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-gray-950 text-xs font-bold uppercase rounded-xl transition">
               Find
             </button>
           </div>
@@ -106,20 +122,24 @@
   <section class="py-16 bg-gray-900/40 border-y border-gray-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
-        
+
         <!-- Owner Photo Card -->
         <div class="md:col-span-5 flex justify-center">
-          <div class="relative w-full max-w-xs aspect-[4/5] rounded-3xl overflow-hidden glass-card border-2 border-amber-500/40 shadow-2xl bg-gray-950 group">
-            <img src="./owner.jpg" alt="Mr. Dinesh Mandal" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+          <div
+            class="relative w-full max-w-xs aspect-[4/5] rounded-3xl overflow-hidden glass-card border-2 border-amber-500/40 shadow-2xl bg-gray-950 group">
+            <img src="./owner.jpg" alt="Mr. Dinesh Mandal"
+              class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/20 to-transparent"></div>
-            
-            <div class="absolute bottom-4 left-4 right-4 p-3.5 rounded-2xl glass-card bg-gray-950/90 border border-amber-500/30">
+
+            <div
+              class="absolute bottom-4 left-4 right-4 p-3.5 rounded-2xl glass-card bg-gray-950/90 border border-amber-500/30">
               <div class="flex items-center justify-between">
                 <div>
                   <h3 class="text-sm font-bold text-white">Mr. Dinesh Mandal</h3>
                   <div class="text-[11px] text-amber-400 font-mono">Owner &amp; Founder</div>
                 </div>
-                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                <span
+                  class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
                   12+ Yrs Exp
                 </span>
               </div>
@@ -129,7 +149,8 @@
 
         <!-- Bio & Details -->
         <div class="md:col-span-7 space-y-5">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-mono font-semibold uppercase">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-mono font-semibold uppercase">
             <span>Serving Since 22/03/2018</span>
           </div>
 
@@ -142,18 +163,24 @@
           </p>
 
           <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
-            Prince Printers &amp; Studio ki shuruat <strong>22 March 2018 (22/03/2018)</strong> ko Mr. Dinesh Mandal dwara ki gayi thi, jinhe photography, studio portraits aur digital printing services mein <strong>12+ varsho ka vishwasneeya anubhav</strong> hai. Kashitar, Karmatar, Jamtara mein sthit hamara studio har tarah ke personal aur commercial shoots ke liye ek trusted kendra hai.
+            Prince Printers &amp; Studio ki shuruat <strong>22 March 2018 (22/03/2018)</strong> ko Mr. Dinesh Mandal
+            dwara ki gayi thi, jinhe photography, studio portraits aur digital printing services mein <strong>12+ varsho
+              ka vishwasneeya anubhav</strong> hai. Kashitar, Karmatar, Jamtara mein sthit hamara studio har tarah ke
+            personal aur commercial shoots ke liye ek trusted kendra hai.
           </p>
 
           <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-            Hum wedding photography, candid shots, passport photos, high-quality color printing, lamination, scanning, photocopy, online form filling aur graphic design ki sampoorna suvidha pradan karte hain.
+            Hum wedding photography, candid shots, passport photos, high-quality color printing, lamination, scanning,
+            photocopy, online form filling aur graphic design ki sampoorna suvidha pradan karte hain.
           </p>
 
           <div class="pt-2 flex flex-wrap gap-3">
-            <a href="https://instagram.com/printersprince" target="_blank" class="px-4 py-2 rounded-xl bg-purple-950/60 border border-purple-500/40 text-purple-300 hover:text-white text-xs font-semibold flex items-center gap-2 transition">
+            <a href="https://instagram.com/printersprince" target="_blank"
+              class="px-4 py-2 rounded-xl bg-purple-950/60 border border-purple-500/40 text-purple-300 hover:text-white text-xs font-semibold flex items-center gap-2 transition">
               <span>📸 Instagram: @printersprince</span>
             </a>
-            <a href="https://www.youtube.com/results?search_query=PRINCE+PRINTERS+%26+STUDIO" target="_blank" class="px-4 py-2 rounded-xl bg-red-950/60 border border-red-500/40 text-red-300 hover:text-white text-xs font-semibold flex items-center gap-2 transition">
+            <a href="https://www.youtube.com/results?search_query=PRINCE+PRINTERS+%26+STUDIO" target="_blank"
+              class="px-4 py-2 rounded-xl bg-red-950/60 border border-red-500/40 text-red-300 hover:text-white text-xs font-semibold flex items-center gap-2 transition">
               <span>▶️ YouTube: PRINCE PRINTERS &amp; STUDIO</span>
             </a>
           </div>
@@ -174,53 +201,77 @@
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      
+
       <div class="p-5 rounded-2xl glass-card border border-gray-800 space-y-3">
-        <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-lg">📷</div>
+        <div
+          class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-lg">
+          📷</div>
         <h3 class="text-base font-bold text-white">Wedding Photography</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">Candid photography, traditional shoots, and ritual emotional moments captured with cinema lenses.</p>
+        <p class="text-xs text-gray-400 leading-relaxed">Candid photography, traditional shoots, and ritual emotional
+          moments captured with cinema lenses.</p>
       </div>
 
       <div class="p-5 rounded-2xl glass-card border border-gray-800 space-y-3">
-        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center text-lg">👤</div>
+        <div
+          class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center text-lg">
+          👤</div>
         <h3 class="text-base font-bold text-white">Instant Passport Photos</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">Quick biometric studio portraits for government IDs, visas, documents, and official forms.</p>
+        <p class="text-xs text-gray-400 leading-relaxed">Quick biometric studio portraits for government IDs, visas,
+          documents, and official forms.</p>
       </div>
 
       <div class="p-5 rounded-2xl glass-card border border-gray-800 space-y-3">
-        <div class="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-lg">🎨</div>
+        <div
+          class="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-lg">
+          🎨</div>
         <h3 class="text-base font-bold text-white">Color Printing &amp; Flex</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">High resolution vibrant color printing, glossy photo prints, banners, cards, and invitations.</p>
+        <p class="text-xs text-gray-400 leading-relaxed">High resolution vibrant color printing, glossy photo prints,
+          banners, cards, and invitations.</p>
       </div>
 
       <div class="p-5 rounded-2xl glass-card border border-gray-800 space-y-3">
-        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">📄</div>
+        <div
+          class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+          📄</div>
         <h3 class="text-base font-bold text-white">Lamination &amp; Scanning</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">Document protection, thermal lamination, high-DPI document scanning, and fast photocopies.</p>
+        <p class="text-xs text-gray-400 leading-relaxed">Document protection, thermal lamination, high-DPI document
+          scanning, and fast photocopies.</p>
       </div>
 
       <div class="p-5 rounded-2xl glass-card border border-gray-800 space-y-3">
-        <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">💻</div>
+        <div
+          class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+          💻</div>
         <h3 class="text-base font-bold text-white">Online Form Filling</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">Competitive exams, government schemes, admissions, and verified digital submissions.</p>
+        <p class="text-xs text-gray-400 leading-relaxed">Competitive exams, government schemes, admissions, and verified
+          digital submissions.</p>
       </div>
 
       <div class="p-5 rounded-2xl glass-card border border-gray-800 space-y-3">
-        <div class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 text-orange-400 flex items-center justify-center text-lg">✨</div>
+        <div
+          class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 text-orange-400 flex items-center justify-center text-lg">
+          ✨</div>
         <h3 class="text-base font-bold text-white">Graphic Designing</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">Custom photo editing, poster creation, branding design, and social media creative work.</p>
+        <p class="text-xs text-gray-400 leading-relaxed">Custom photo editing, poster creation, branding design, and
+          social media creative work.</p>
       </div>
 
       <div class="p-5 rounded-2xl glass-card border border-gray-800 space-y-3">
-        <div class="w-10 h-10 rounded-xl bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 flex items-center justify-center text-lg">🔍</div>
+        <div
+          class="w-10 h-10 rounded-xl bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 flex items-center justify-center text-lg">
+          🔍</div>
         <h3 class="text-base font-bold text-white">AI Selfie Face Search</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">Wedding guests can take a selfie to automatically find and download all their photos instantly.</p>
+        <p class="text-xs text-gray-400 leading-relaxed">Wedding guests can take a selfie to automatically find and
+          download all their photos instantly.</p>
       </div>
 
       <div class="p-5 rounded-2xl glass-card border border-gray-800 space-y-3">
-        <div class="w-10 h-10 rounded-xl bg-violet-500/10 border border-violet-500/20 text-violet-400 flex items-center justify-center text-lg">📖</div>
+        <div
+          class="w-10 h-10 rounded-xl bg-violet-500/10 border border-violet-500/20 text-violet-400 flex items-center justify-center text-lg">
+          📖</div>
         <h3 class="text-base font-bold text-white">Premium Wedding Albums</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">High-gloss &amp; matte layflat photo albums with customized covers to treasure memories forever.</p>
+        <p class="text-xs text-gray-400 leading-relaxed">High-gloss &amp; matte layflat photo albums with customized
+          covers to treasure memories forever.</p>
       </div>
 
     </div>
@@ -230,7 +281,8 @@
   <section id="bookingFormSection" class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto scroll-mt-24">
     <div class="p-8 sm:p-10 rounded-3xl glass-card border border-amber-500/40 bg-gray-900/95 shadow-2xl relative">
       <div class="text-center max-w-xl mx-auto mb-8">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-mono font-semibold uppercase mb-3">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-mono font-semibold uppercase mb-3">
           <span>📝 Quick Inquiry &amp; Booking Form</span>
         </div>
         <h2 class="text-2xl sm:text-3xl font-black text-white">
@@ -245,18 +297,21 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Aapka Naam (Full Name) *</label>
-            <input type="text" id="custName" required placeholder="e.g. Ramesh Kumar" class="w-full px-4 py-2.5 bg-gray-950 border border-gray-700 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber-400">
+            <input type="text" id="custName" required placeholder="e.g. Ramesh Kumar"
+              class="w-full px-4 py-2.5 bg-gray-950 border border-gray-700 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber-400">
           </div>
           <div>
             <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Mobile / WhatsApp Number *</label>
-            <input type="tel" id="custPhone" required placeholder="e.g. 98357XXXXX" class="w-full px-4 py-2.5 bg-gray-950 border border-gray-700 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber-400 font-mono">
+            <input type="tel" id="custPhone" required placeholder="e.g. 98357XXXXX"
+              class="w-full px-4 py-2.5 bg-gray-950 border border-gray-700 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber-400 font-mono">
           </div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Service Type *</label>
-            <select id="custService" class="w-full px-4 py-2.5 bg-gray-950 border border-gray-700 rounded-xl text-sm text-white focus:outline-none focus:border-amber-400">
+            <select id="custService"
+              class="w-full px-4 py-2.5 bg-gray-950 border border-gray-700 rounded-xl text-sm text-white focus:outline-none focus:border-amber-400">
               <option value="Wedding &amp; Event Shoot">Wedding &amp; Event Photography</option>
               <option value="Passport Photo">Passport Photo (Instant)</option>
               <option value="Color Printing / Flex">Color Printing &amp; Flex Banner</option>
@@ -267,23 +322,28 @@
             </select>
           </div>
           <div>
-            <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Event / Requirement Date (Optional)</label>
-            <input type="date" id="custDate" class="w-full px-4 py-2.5 bg-gray-950 border border-gray-700 rounded-xl text-sm text-white focus:outline-none focus:border-amber-400">
+            <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Event / Requirement Date
+              (Optional)</label>
+            <input type="date" id="custDate"
+              class="w-full px-4 py-2.5 bg-gray-950 border border-gray-700 rounded-xl text-sm text-white focus:outline-none focus:border-amber-400">
           </div>
         </div>
 
         <div>
           <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Aapka Message ya Details</label>
-          <textarea id="custNotes" rows="3" placeholder="Aapko kaisa shoot ya printing kaam chahiye, yahan likhiye..." class="w-full px-4 py-2.5 bg-gray-950 border border-gray-700 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber-400"></textarea>
+          <textarea id="custNotes" rows="3" placeholder="Aapko kaisa shoot ya printing kaam chahiye, yahan likhiye..."
+            class="w-full px-4 py-2.5 bg-gray-950 border border-gray-700 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber-400"></textarea>
         </div>
 
-        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-gray-950 font-bold uppercase text-xs tracking-wider shadow-lg shadow-amber-500/20 transition flex items-center justify-center gap-2 cursor-pointer">
+        <button type="submit"
+          class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-gray-950 font-bold uppercase text-xs tracking-wider shadow-lg shadow-amber-500/20 transition flex items-center justify-center gap-2 cursor-pointer">
           <span>Form Submit Karein (Direct WhatsApp Inquiry)</span>
           <span>🚀</span>
         </button>
       </form>
 
-      <div id="formSuccess" class="hidden mt-6 p-4 rounded-xl bg-emerald-950/80 border border-emerald-500/40 text-center space-y-2">
+      <div id="formSuccess"
+        class="hidden mt-6 p-4 rounded-xl bg-emerald-950/80 border border-emerald-500/40 text-center space-y-2">
         <div class="text-emerald-400 font-bold text-sm">✅ Shukriya! Aapka form successfully submit ho gaya hai.</div>
         <p class="text-xs text-gray-300">Hamari team aapse turant (+91 98357 58765) par contact karegi.</p>
       </div>
@@ -294,17 +354,19 @@
   <section class="py-16 bg-gray-900/60 border-t border-gray-800">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="p-8 rounded-3xl glass-card border border-amber-500/30 space-y-6">
-        
+
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-800 pb-6">
           <div>
             <div class="text-xs text-amber-400 font-mono font-semibold uppercase">Get In Touch</div>
             <h2 class="text-2xl font-black text-white mt-1">Visit or Contact Us</h2>
           </div>
           <div class="flex gap-3">
-            <a href="tel:+919835758765" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold text-xs uppercase transition">
+            <a href="tel:+919835758765"
+              class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold text-xs uppercase transition">
               Call Now
             </a>
-            <a href="https://wa.me/919835758765" target="_blank" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase transition">
+            <a href="https://wa.me/919835758765" target="_blank"
+              class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase transition">
               WhatsApp
             </a>
           </div>
@@ -315,7 +377,8 @@
             <div class="font-bold text-white text-sm">📍 Studio Address</div>
             <p>Vill- Kashitar, Karmatar, Jamtara</p>
             <p class="text-gray-400">Jharkhand, India</p>
-            <p class="text-amber-400 font-mono text-[11px] pt-1">Service Area: Block Road Kashitar, Karmatar, Jamtara</p>
+            <p class="text-amber-400 font-mono text-[11px] pt-1">Service Area: Block Road Kashitar, Karmatar, Jamtara
+            </p>
           </div>
 
           <div class="p-4 rounded-xl bg-gray-950 border border-gray-800 space-y-1.5">
@@ -337,13 +400,15 @@
 
   <!-- FOOTER -->
   <footer class="mt-auto py-8 bg-gray-950 border-t border-gray-900 text-xs text-gray-500">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
       <div>
         &copy; 2026 Prince Printers &amp; Studio. All Rights Reserved.
       </div>
       <div class="flex items-center gap-1.5 text-gray-400">
         <span>Created by</span>
-        <a href="https://quickartphotography.in/" target="_blank" rel="noopener" class="text-amber-400 hover:text-amber-300 hover:underline font-medium">
+        <a href="https://quickartphotography.in/" target="_blank" rel="noopener"
+          class="text-amber-400 hover:text-amber-300 hover:underline font-medium">
           Quick Art Photography Academy
         </a>
       </div>
@@ -381,4 +446,5 @@
     }
   </script>
 </body>
+
 </html>
